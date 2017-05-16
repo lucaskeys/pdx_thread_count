@@ -1,0 +1,7 @@
+<div class="col-md-4">
+	<div class="card" data-id="<%= store.id %>">
+	<!-- now each item will have an id attribute that we can grab and use in the coffeescript code -->
+		<%= image_tag store_image(store.thumb_image, 'thumb'), width: '100%' %>
+		<p class="card-text"><span><%= link_to store.store_name, store_path(store) %></span> <%= store.store_description %></p>
+	</div>
+</div>
