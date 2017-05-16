@@ -1,0 +1,4 @@
+		<% if current_user %>
+		<%= link_to "Follow", :action => :follow, class: 'btn btn-success' %>
+		<%= link_to "Unfollow", :action => :unfollow, class: 'btn btn-success' %>
+		<% end %>
